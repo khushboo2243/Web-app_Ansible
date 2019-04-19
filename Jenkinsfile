@@ -12,10 +12,9 @@ pipeline {
     }
      stage('verficiation'){
        steps {
-                withCredentials([sshUserPrivateKey(credentialsId: '5f2efc63-a4f8-4c24-bf09-3f1a346cbdcf')]) {
+  withCredentials([sshUserPrivateKey(credentialsId: '0e970807-831f-4d01-bcbb-11119d0732a2']) {
     // some block
 }
-       }
      }
     stage('Ping') {
       steps {
