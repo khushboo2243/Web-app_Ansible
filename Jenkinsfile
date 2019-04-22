@@ -18,6 +18,14 @@ pipeline {
           
       }      
     }
+    
+    stage('Execute'){
+      
+      steps{
+        
+        sh'sudo ansible-playbook -s main.yaml'
+      }
+    }
 
   } 
 
