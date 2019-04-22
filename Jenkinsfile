@@ -23,7 +23,7 @@ pipeline {
       
       steps{
         
-        sh'sudo ansible-playbook -i /etc/ansible/hosts --private-key=/var/lib/jenkins/workspace/AnsibleJenkins/id_rsa -s main.yaml'
+        sh'sudo ansible-playbook -i /etc/ansible/hosts --private-key=/var/lib/jenkins/workspace/AnsibleJenkins/id_rsa -s /home/opc/ansible/ main.yaml'
       }
     }
 
