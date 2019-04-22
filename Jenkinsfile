@@ -23,7 +23,7 @@ pipeline {
       
       steps{
         
-        sh' sudo ansible-playbook -s /etc/ansible/main.yaml '
+        sh 'ansible-playbook -s /etc/ansible/main.yaml '
       }
     }
 
