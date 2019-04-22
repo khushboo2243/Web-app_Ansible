@@ -14,7 +14,9 @@ pipeline {
     stage('Ping') {
       steps {
           
-          sh 'sudo ansible all -m ping'
+  
+        
+        sh 'sudo ansible all -i /var/lib/jenkins/workspace/AnsibleJenkins/hosts --private-key=/var/lib/jenkins/workspace/AnsibleJenkins/id_rsa -m ping -u opc -v'
           
       }      
     }
