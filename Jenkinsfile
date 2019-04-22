@@ -16,7 +16,7 @@ pipeline {
           
   
         
-        sh 'sudo ansible all -i /var/lib/jenkins/workspace/AnsibleJenkins/hosts --private-key=/var/lib/jenkins/workspace/AnsibleJenkins/id_rsa -m ping -u opc -v'
+        sh 'sudo ansible all -i /etc/ansible/hosts --private-key=/var/lib/jenkins/workspace/AnsibleJenkins/id_rsa -m ping -u opc -v'
           
       }      
     }
