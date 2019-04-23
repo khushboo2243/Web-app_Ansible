@@ -27,4 +27,4 @@
         state: started
         pull: true
         ports:
-        - "8888:80"
+        - "5000:80"
