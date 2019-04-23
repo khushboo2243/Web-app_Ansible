@@ -20,11 +20,11 @@
       docker_image:
         name: prakhar1989/static-site
 
-    - name: stop and remove the container
+    - name: running the container
       docker_container:
         name: static-site
         image: "prakhar1989/static-site"
-        state: absent
+        state: started
         pull: true
         ports:
         - "8888:80"
