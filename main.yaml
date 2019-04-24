@@ -22,7 +22,6 @@
         name: static-site
         image: "jshahid21/db-apex-dev-image/"
         state: started
-        pull: true
         detach: yes
         privileged: yes
         devices: /dev/shm
