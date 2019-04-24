@@ -20,7 +20,7 @@
     - name: running the container
       docker_container:
         name: apex-app
-        image: "jshahid21/db-apex-dev-image/"
+        image: "jshahid21/db-apex-dev-image"
         state: started
         detach: yes
         privileged: yes
