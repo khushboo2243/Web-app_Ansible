@@ -17,6 +17,7 @@
         name: docker
         enabled: yes
 
+
     - name: running the container
       docker_container:
         name: apex-app
